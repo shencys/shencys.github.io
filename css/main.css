@@ -941,7 +941,7 @@ pre .javascript .function {
   padding: 0 20px;
   font-size: 14px;
   color: #555;
-  background: #fff;
+  background: rgba(255,255,255,0.3);
   border: 2px solid #555;
   text-decoration: none;
   border-radius: 2px;
@@ -1832,7 +1832,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e98867;
+  background: #54f5e7;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3096,6 +3096,7 @@ pre .javascript .function {
   }
   .posts-expand .post-button {
     margin-top: 20px;
+    background: rgba(255,255,255,0.7);
   }
   .post-block {
     padding: 20px;
