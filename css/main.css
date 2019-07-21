@@ -1832,7 +1832,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ab178e;
+  background: #e98867;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2713,7 +2713,7 @@ pre .javascript .function {
   float: left;
   margin-top: 300px;
   width: 240px;
-  background: #eee;
+  background: rgba(255,255,255,0.3);
   box-shadow: none;
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2822,8 +2822,8 @@ pre .javascript .function {
 }
 .menu .menu-item a:hover,
 .menu-item-active a {
-  background: #f9f9f9;
-  border-bottom-color: #fff;
+  background: rgba(255,255,255,0.7);
+  border-bottom-color: rgba(255,255,0,0.5);
 }
 .menu .menu-item br {
   display: none;
@@ -2837,10 +2837,10 @@ pre .javascript .function {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: #bbb;
+  background-color: rgba(255,255,255,0.5);
 }
 .btn-bar {
-  background-color: #fff;
+  background-color: rgba(255,255,255,0.5);
 }
 .site-nav-toggle {
   left: 20px;
