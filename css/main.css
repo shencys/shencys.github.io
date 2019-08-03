@@ -1832,7 +1832,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #061662;
+  background: #747f79;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3135,10 +3135,10 @@ overflow
   }
 }
 body {
-  background-image: url("/images/rt.jpg");
+  background-image: url("/images/op2.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 45% 10%;
+  background-position: 50% 50%;
 }
 .post-toc .nav .nav-child {
   display: block;
