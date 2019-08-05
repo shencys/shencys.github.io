@@ -90,7 +90,7 @@
 <meta property="og:description" content="组合数学入门由于老师直播卡到自闭才开始学习 抽屉原理内容：把 n+1 件东西放入 n 个抽屉，则至少有一个抽屉里放两件或两件以上的东西。 从令一角度说，把 n-1 件东西放入 n  个抽屉，则至少一个抽屉是空的。 证明：对于第一条，考虑最差情况，既每个球都放到一个单独的抽屉里，这样还剩下一个球，将其放到任意一个抽屉里，该抽屉都会有两个，故成立。(第二条证明方法与第一条相似，建议百度)。 应用：给出">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://shencys.github.io/images/实例.png">
-<meta property="og:updated_time" content="2019-08-04T12:45:38.649Z">
+<meta property="og:updated_time" content="2019-08-05T00:25:33.748Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="组合数学入门">
 <meta name="twitter:description" content="组合数学入门由于老师直播卡到自闭才开始学习 抽屉原理内容：把 n+1 件东西放入 n 个抽屉，则至少有一个抽屉里放两件或两件以上的东西。 从令一角度说，把 n-1 件东西放入 n  个抽屉，则至少一个抽屉是空的。 证明：对于第一条，考虑最差情况，既每个球都放到一个单独的抽屉里，这样还剩下一个球，将其放到任意一个抽屉里，该抽屉都会有两个，故成立。(第二条证明方法与第一条相似，建议百度)。 应用：给出">
@@ -431,14 +431,14 @@
 <p>所有不同组合的个数，叫做组合数</p>
 <h3 id="符号"><a href="#符号" class="headerlink" title="符号"></a>符号</h3><p>从m个数中取n个数计做$C_m^n$或c(m,n);</p>
 <h3 id="公式-1"><a href="#公式-1" class="headerlink" title="公式"></a>公式</h3><p>$c_m^n=\frac{A_m^n}{n!}=\frac{\frac{n!}{(n-m)!}}{n!}=\frac{n!}{(n-m)!n!}$</p>
-<h3 id="公示证明"><a href="#公示证明" class="headerlink" title="公示证明"></a>公示证明</h3><p>对于c来说，$c_n^m$与$A_n^m$的区别在于将方案求出之后是否进行全排列，全排列的可能方案数为n!故上述公式成立。</p>
+<h3 id="公示证明"><a href="#公示证明" class="headerlink" title="公示证明"></a>公示证明</h3><p>对于c来说，$c_m^n$与$A_m^n$的区别在于将方案求出之后是否进行全排列，全排列的可能方案数为n!故上述公式成立。</p>
 <h3 id="可重复组合数"><a href="#可重复组合数" class="headerlink" title="可重复组合数"></a>可重复组合数</h3><h4 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h4><p>可重复组合数既在n个数中选择m个数，可重复选取，计做$H_n^m$</p>
 <h4 id="公式-2"><a href="#公式-2" class="headerlink" title="公式"></a>公式</h4><p>$H_n^m=c_{n+m-1}^m=\frac{n+m-1}{m!(n-1)!}$</p>
 <h4 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h4><p>可重复组合数的计算公式可以理解为，在n个数的基础上再加上m-1个万能数，这样在选择时，万能数被选就等同于多次选取一个数，可以感性理解一下，比较容易懂。</p>
 <h4 id="拓展"><a href="#拓展" class="headerlink" title="拓展"></a>拓展</h4><p>从 A={1,2,…,n} 中选取 m 个不相邻的组合，其组合数为：$C_{n-m+1}^m$,同样感心理解一下，减去的这些数就当成是两数之间的相邻了。</p>
 <h3 id="递推公式："><a href="#递推公式：" class="headerlink" title="递推公式："></a>递推公式：</h3><p>$c_n^m=c_{n-1}^{m-1}+c_{n-1}^{m}$</p>
 <p>证：选取集合中任意一数作为特定数，将答案分为是否选取该特定数，一种情况为选取，情况数既在其他n-1个数中选取m-1个数的方案数，另一种情况既不选取该特定数，情况数既在其他n-1个数中选取m个数。</p>
-<p><strong>以上知识，大概在普及组+，也就是普及组$t4$难度，提高组吗，这些完全不够<del>勇</del>用，深入一点的可以看我的另一篇博客：<a href="www.baidu.com">组合数学提高</a>.</strong></p>
+<p><strong>以上知识，大概在普及组+，也就是普及组$t4$难度，提高组吗，这些完全不够<del>勇</del>用，深入一点的可以看我的另一篇博客：<a href="[https://shencys.github.io/2019/08/04/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6%E6%8F%90%E9%AB%98/#more](https://shencys.github.io/2019/08/04/组合数学提高/#more">组合数学提高</a>).</strong></p>
 
       
     </div>
