@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="asd,dsads,adad,asds,asdsw,dasdfasf,">
+  <meta name="keywords" content="Hexo, NexT">
 
 
 
@@ -81,18 +81,17 @@
 
 
 
-<meta name="description" content="test">
-<meta name="keywords" content="asd,dsads,adad,asds,asdsw,dasdfasf">
+<meta name="description" content="最短路是图论中非常常见的一种算法，一般来所，很多考试的第三题都会多多少少和最短路算法沾点边，而许多oier常用的是SPFA算法，也就是队列优化后的Bellman-Ford算法，但是实际上，这种算法具有非常大的不稳定性，也就是说，只要出题人愿意，他可以分分钟卡死你。所以一般考试时，只要数据没有到千万级别，一般我们会采用dijkstra堆优化的方式来写最短路。 所谓dijkstra，就是红白点的一种最">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ol">
-<meta property="og:url" content="http://shencys.github.io/2019/07/29/ol/index.html">
+<meta property="og:title" content="dijkstra堆优化的小技巧">
+<meta property="og:url" content="http://shencys.github.io/2019/08/10/dijkstra堆优化的具体实现方法/index.html">
 <meta property="og:site_name" content="Scy&#39;s personal blog">
-<meta property="og:description" content="test">
+<meta property="og:description" content="最短路是图论中非常常见的一种算法，一般来所，很多考试的第三题都会多多少少和最短路算法沾点边，而许多oier常用的是SPFA算法，也就是队列优化后的Bellman-Ford算法，但是实际上，这种算法具有非常大的不稳定性，也就是说，只要出题人愿意，他可以分分钟卡死你。所以一般考试时，只要数据没有到千万级别，一般我们会采用dijkstra堆优化的方式来写最短路。 所谓dijkstra，就是红白点的一种最">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-30T00:30:09.498Z">
+<meta property="og:updated_time" content="2019-08-10T03:27:36.557Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ol">
-<meta name="twitter:description" content="test">
+<meta name="twitter:title" content="dijkstra堆优化的小技巧">
+<meta name="twitter:description" content="最短路是图论中非常常见的一种算法，一般来所，很多考试的第三题都会多多少少和最短路算法沾点边，而许多oier常用的是SPFA算法，也就是队列优化后的Bellman-Ford算法，但是实际上，这种算法具有非常大的不稳定性，也就是说，只要出题人愿意，他可以分分钟卡死你。所以一般考试时，只要数据没有到千万级别，一般我们会采用dijkstra堆优化的方式来写最短路。 所谓dijkstra，就是红白点的一种最">
 
 
 
@@ -122,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://shencys.github.io/2019/07/29/ol/">
+  <link rel="canonical" href="http://shencys.github.io/2019/08/10/dijkstra堆优化的具体实现方法/">
 
 
 
 
 
-  <title>ol | Scy's personal blog</title>
+  <title>dijkstra堆优化的小技巧 | Scy's personal blog</title>
   
 
 
@@ -308,12 +307,12 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://shencys.github.io/2019/07/29/ol/">
+    <link itemprop="mainEntityOfPage" href="http://shencys.github.io/2019/08/10/dijkstra堆优化的具体实现方法/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Scy">
       <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/to.jpg">
+      <meta itemprop="image" content="/images/toux.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -325,7 +324,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">ol</h1>
+          <h1 class="post-title" itemprop="name headline">dijkstra堆优化的小技巧</h1>
         
 
         <div class="post-meta">
@@ -337,8 +336,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-29T15:47:34+08:00">
-                2019-07-29
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-10T10:54:58+08:00">
+                2019-08-10
               </time>
             
 
@@ -356,8 +355,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/07/29/ol/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/2019/07/29/ol/" itemprop="commentsCount"></span>
+                <a href="/2019/08/10/dijkstra堆优化的具体实现方法/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2019/08/10/dijkstra堆优化的具体实现方法/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -385,7 +384,12 @@
       
 
       
-        <p>test</p>
+        <p>最短路是图论中非常常见的一种算法，一般来所，很多考试的第三题都会多多少少和最短路算法沾点边，而许多oier常用的是SPFA算法，也就是队列优化后的Bellman-Ford算法，但是实际上，这种算法具有非常大的不稳定性，也就是说，只要出题人愿意，他可以分分钟卡死你。所以一般考试时，只要数据没有到千万级别，一般我们会采用dijkstra堆优化的方式来写最短路。</p>
+<p>所谓dijkstra，就是红白点的一种最短路算法，每次找到所有点中dis值最小的点，以其为起始点来更新其他点的dis值。一般来说，这种算法的实际复杂度为$n^2$,常数上不大(确信)，而我们发现，这里有一部是需要找到所有点中dis值的最小值，我们就可以使用对的方式来优化，可以将复杂度降至(nlogn)(实际上由于点数的膨胀，复杂度可能会超过$2nlogn$),那么在考场上，手写堆是十分耗时的，而且万一写错就彻底爆炸了，所有我们可以采用stl中的一种类堆结构：单调队列(priority_queue)来维护。</p>
+<p>算法原理很简单，就是用单调队列来维护每次找寻的最小值，但是实际操作中却长长有一点小问题：<br>1.默认的stl是从大到小排列的，所以我们要重载小于号为大于号才能让其变成小根堆。</p>
+<p>2.一般来说，这个算法每个点的dis值是在不断变化的，所以我们需要将每个变化的值，连同其坐标一起丢入单调队列之中，每次去除队首元素时，首先判断其是否被用过。</p>
+<p>下面附代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;bits/stdc++.h&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">#define int long long</span><br><span class="line">const int maxn=10001,maxm=500001;</span><br><span class="line">struct node&#123;</span><br><span class="line">	int w,z;</span><br><span class="line">&#125;p;</span><br><span class="line">bool operator&lt;(node a,node b)</span><br><span class="line">&#123;</span><br><span class="line">	return a.z&gt;b.z;</span><br><span class="line">&#125;</span><br><span class="line">struct Edge&#123;</span><br><span class="line">	int to,next,dis;</span><br><span class="line">&#125;edge[maxm];</span><br><span class="line">int head[maxn],num_edge,dis[maxn],n,m,s,t,a,b,c,use[maxn];</span><br><span class="line">void add_edge(int from,int to,int dis)</span><br><span class="line">&#123;</span><br><span class="line">	edge[++num_edge].dis=dis;</span><br><span class="line">	edge[num_edge].to=to;</span><br><span class="line">	edge[num_edge].next=head[from];</span><br><span class="line">	head[from]=num_edge;</span><br><span class="line">&#125;</span><br><span class="line">priority_queue&lt;node&gt; q;</span><br><span class="line">void push(int w)</span><br><span class="line">&#123;</span><br><span class="line">	node a;</span><br><span class="line">	a.w=w;</span><br><span class="line">	a.z=dis[w];</span><br><span class="line">	q.push(a);</span><br><span class="line">&#125;</span><br><span class="line">void dijkstra(int s)</span><br><span class="line">&#123;</span><br><span class="line">	push(s);</span><br><span class="line">	while(!q.empty())</span><br><span class="line">	&#123;</span><br><span class="line">		p=q.top();</span><br><span class="line">		q.pop();</span><br><span class="line">		if(use[p.w]==1)</span><br><span class="line">		continue ;</span><br><span class="line">		use[p.w]=1;</span><br><span class="line">		for(int i=head[p.w];i;i=edge[i].next)</span><br><span class="line">		&#123;</span><br><span class="line">			if(dis[edge[i].to]&gt;dis[p.w]+edge[i].dis)</span><br><span class="line">			dis[edge[i].to]=dis[p.w]+edge[i].dis,push(edge[i].to);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">priority_queue&lt;node&gt; qwq;</span><br><span class="line">void test()</span><br><span class="line">&#123;</span><br><span class="line">	node a1,a2,a3;</span><br><span class="line">	a1.w=1,a1.z=2;</span><br><span class="line">	a2.z=4;</span><br><span class="line">	a3.z=12;</span><br><span class="line">	qwq.push(a1);</span><br><span class="line">	qwq.push(a2);</span><br><span class="line">	qwq.push(a3);</span><br><span class="line">	cout&lt;&lt;qwq.top().z&lt;&lt;&quot; &quot;;</span><br><span class="line">	qwq.pop();</span><br><span class="line">	cout&lt;&lt;qwq.top().z&lt;&lt;&quot; &quot;;</span><br><span class="line">	qwq.pop();</span><br><span class="line">	cout&lt;&lt;qwq.top().z&lt;&lt;&quot; &quot;;</span><br><span class="line">&#125;</span><br><span class="line">signed main()</span><br><span class="line">&#123;</span><br><span class="line">	//test();</span><br><span class="line">    cin&gt;&gt;n&gt;&gt;m&gt;&gt;s;</span><br><span class="line">	for(int i=1;i&lt;=n;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		dis[i]=2147483647;</span><br><span class="line">	&#125;</span><br><span class="line">	dis[s]=0;</span><br><span class="line">	for(int i=1;i&lt;=m;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		cin&gt;&gt;a&gt;&gt;b&gt;&gt;c;</span><br><span class="line">		add_edge(a,b,c);</span><br><span class="line">	&#125;</span><br><span class="line">	dijkstra(s);</span><br><span class="line">	for(int i=1;i&lt;=n;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		cout&lt;&lt;dis[i]&lt;&lt;&quot; &quot;;</span><br><span class="line">	&#125;</span><br><span class="line">	for(int i=1;i=n;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		cout&lt;&lt;dis[i]+</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -409,22 +413,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/asd/" rel="tag"><i class="fa fa-tag"></i> asd</a>
-          
-            <a href="/tags/dsads/" rel="tag"><i class="fa fa-tag"></i> dsads</a>
-          
-            <a href="/tags/adad/" rel="tag"><i class="fa fa-tag"></i> adad</a>
-          
-            <a href="/tags/asds/" rel="tag"><i class="fa fa-tag"></i> asds</a>
-          
-            <a href="/tags/asdsw/" rel="tag"><i class="fa fa-tag"></i> asdsw</a>
-          
-            <a href="/tags/dasdfasf/" rel="tag"><i class="fa fa-tag"></i> dasdfasf</a>
-          
-        </div>
-      
 
       
       
@@ -434,8 +422,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/27/三体读后感/" rel="next" title="三体读后感">
-                <i class="fa fa-chevron-left"></i> 三体读后感
+              <a href="/2019/08/06/乘法逆元/" rel="next" title="乘法逆元">
+                <i class="fa fa-chevron-left"></i> 乘法逆元
               </a>
             
           </div>
@@ -444,8 +432,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/07/29/关于海神阁阁主真实身份的推测/" rel="prev" title="关于海神阁阁主真实身份的推测">
-                关于海神阁阁主真实身份的推测 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/08/14/markdown编辑器推荐/" rel="prev" title="markdown编辑器推荐">
+                markdown编辑器推荐 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -509,7 +497,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/images/to.jpg" alt="Scy">
+              <img class="site-author-image" itemprop="image" src="/images/toux.png" alt="Scy">
             
               <p class="site-author-name" itemprop="name">Scy</p>
               <p class="site-description motion-element" itemprop="description">a xinao, animation exchange blog.</p>
@@ -522,7 +510,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -534,7 +522,7 @@
 <h3 class="widget-title">Tag Cloud</h3>
 <div id="myCanvasContainer" class="widget tagcloud">
     <canvas width="250" height="250" id="resCanvas" style="width=100%">
-        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/adad/">adad</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/asd/">asd</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/asds/">asds</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/asdsw/">asdsw</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dasdfasf/">dasdfasf</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dsads/">dsads</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/乘法逆元/">乘法逆元</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/小说/">小说</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数论/">数论</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/组合数/">组合数</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/终极斗罗/">终极斗罗</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/读后感/">读后感</a><span class="tag-list-count">1</span></li></ul>
+        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/">markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/乘法逆元/">乘法逆元</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/小说/">小说</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数论/">数论</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/狐妖/">狐妖</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/组合数/">组合数</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/终极斗罗/">终极斗罗</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/读后感/">读后感</a><span class="tag-list-count">1</span></li></ul>
     </canvas>
 </div>
 </div>
@@ -555,7 +543,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
