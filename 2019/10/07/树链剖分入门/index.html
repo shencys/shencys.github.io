@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="数与结构，树链剖分,">
 
 
 
@@ -82,6 +82,7 @@
 
 
 <meta name="description" content="我们先来看这么个题： 给你一棵树，每次可能修改一条路径上的值，或是修改一整棵子树上的值，现在有多次查询，要查询一条链上的最大值（或是和），或是查询一棵子树上的最大值(或是和)。模板题，我们考虑最暴力的做法，对于每一条链，求LCA，然后暴力修改，这不用想就知道绝对要凉。那么我们想一想，如果我们维护的不是一棵树，而是一个链，那么我们有很多种方法来维护了(线段树，树状数组，主席树，分块等等等等)，那么我">
+<meta name="keywords" content="数与结构，树链剖分">
 <meta property="og:type" content="article">
 <meta property="og:title" content="树链剖分入门">
 <meta property="og:url" content="http://shencys.github.io/2019/10/07/树链剖分入门/index.html">
@@ -89,7 +90,7 @@
 <meta property="og:description" content="我们先来看这么个题： 给你一棵树，每次可能修改一条路径上的值，或是修改一整棵子树上的值，现在有多次查询，要查询一条链上的最大值（或是和），或是查询一棵子树上的最大值(或是和)。模板题，我们考虑最暴力的做法，对于每一条链，求LCA，然后暴力修改，这不用想就知道绝对要凉。那么我们想一想，如果我们维护的不是一棵树，而是一个链，那么我们有很多种方法来维护了(线段树，树状数组，主席树，分块等等等等)，那么我">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://shencys.github.io/images/树链剖分.png">
-<meta property="og:updated_time" content="2019-10-07T12:51:16.683Z">
+<meta property="og:updated_time" content="2019-10-07T12:54:32.362Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="树链剖分入门">
 <meta name="twitter:description" content="我们先来看这么个题： 给你一棵树，每次可能修改一条路径上的值，或是修改一整棵子树上的值，现在有多次查询，要查询一条链上的最大值（或是和），或是查询一棵子树上的最大值(或是和)。模板题，我们考虑最暴力的做法，对于每一条链，求LCA，然后暴力修改，这不用想就知道绝对要凉。那么我们想一想，如果我们维护的不是一棵树，而是一个链，那么我们有很多种方法来维护了(线段树，树状数组，主席树，分块等等等等)，那么我">
@@ -349,6 +350,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/数与结构/" itemprop="url" rel="index">
+                    <span itemprop="name">数与结构</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -415,6 +438,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/数与结构，树链剖分/" rel="tag"><i class="fa fa-tag"></i> 数与结构，树链剖分</a>
+          
+        </div>
       
 
       
@@ -521,7 +550,7 @@
 <h3 class="widget-title">Tag Cloud</h3>
 <div id="myCanvasContainer" class="widget tagcloud">
     <canvas width="250" height="250" id="resCanvas" style="width=100%">
-        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/">markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/乘法逆元/">乘法逆元</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/加密算法/">加密算法</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/小说/">小说</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数论/">数论</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/狐妖/">狐妖</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/组合数/">组合数</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/终极斗罗/">终极斗罗</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/诗/">诗</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/读后感/">读后感</a><span class="tag-list-count">1</span></li></ul>
+        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/">markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/乘法逆元/">乘法逆元</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/加密算法/">加密算法</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/小说/">小说</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数与结构，树链剖分/">数与结构，树链剖分</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数论/">数论</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/狐妖/">狐妖</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/组合数/">组合数</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/终极斗罗/">终极斗罗</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/诗/">诗</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/读后感/">读后感</a><span class="tag-list-count">1</span></li></ul>
     </canvas>
 </div>
 </div>
@@ -531,7 +560,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -542,7 +571,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -1145,6 +1174,26 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
