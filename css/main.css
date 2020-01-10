@@ -1832,7 +1832,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffa68f;
+  background: #ffc3a8;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2618,7 +2618,7 @@ overflow
   overflow: hidden;
   padding: 0;
   width: 240px;
-  background: rgba(255,255,255,0.5);
+  background: rgba(255,255,255,0.7);
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
   border-radius: initial;
 }
@@ -2677,7 +2677,7 @@ overflow
   box-sizing: border-box;
   padding: 40px;
   width: calc(100% - 252px);
-  background: rgba(255,255,255,0.5);
+  background: rgba(255,255,255,0.7);
   min-height: 700px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
   border-radius: initial;
@@ -2702,7 +2702,7 @@ overflow
   float: left;
   margin-top: 300px;
   width: 240px;
-  background: rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.7);
   box-shadow: none;
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -3112,7 +3112,7 @@ overflow
   }
   .posts-expand .post-button {
     margin-top: 12px;
-    background: rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.7);
   }
   .posts-expand img {
     padding: initial !important;
@@ -3138,7 +3138,7 @@ body {
   background-image: url("/images/op2.jpg");
   background-repeat: repeat;
   background-attachment: fixed;
-  background-position: 60% 60%;
+  background-position: 80% 80%;
 }
 .post-toc .nav .nav-child {
   display: block;
