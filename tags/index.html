@@ -348,20 +348,6 @@
   
 
 
-<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<div id="gitalk-container"></div>
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-<script type="text/javascript">
-    var gitalk = new Gitalk({
-        clientID: '<%= theme.gitalk.clientID %>',
-        clientSecret: '<%= theme.gitalk.clientSecret %>',
-        id: window.location.pathname,
-        repo: '<%= theme.gitalk.repo %>',
-        owner: '<%= theme.gitalk.owner %>',
-        admin: '<%= theme.gitalk.admin %>'
-    })
-    gitalk.render('gitalk-container')
-</script>
         </div>
         
           
@@ -698,6 +684,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'DMaKfnUq9EXzSJOTs9cOR5jR-gzGzoHsz',
+        appKey: 'nl0tL0JnbIax0OuHNusJX5Ip',
+        placeholder: '说点什么',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'1' || 10,
+    });
+  </script>
 
 
 
