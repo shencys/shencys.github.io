@@ -1731,7 +1731,20 @@ $(x+y)^n=C_n^0x^n+C_n^1x^{n-1}y+C_n^2x^{n-2}y^2+……+C
 
 
           
-
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<div id="gitalk-container"></div>
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '<%= theme.gitalk.clientID %>',
+        clientSecret: '<%= theme.gitalk.clientSecret %>',
+        id: window.location.pathname,
+        repo: '<%= theme.gitalk.repo %>',
+        owner: '<%= theme.gitalk.owner %>',
+        admin: '<%= theme.gitalk.admin %>'
+    })
+    gitalk.render('gitalk-container')
+</script>
         </div>
         
           
